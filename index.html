@@ -36,7 +36,18 @@
 		<h2 id="textoutput" class="center">Show results here</h2>
 	</div>
 	<script type="text/javascript">
+		var get = document.getElementById('entrybutton');
+    		function works(){
+      			var msg = "Dwight Williams: " + get.value;
+      			if (get.value.length <= 0){
+        			alert("Enter message in input field.");
+      			}
+      			else{
+        			alert(msg);
+      			}
+   		}
 		
+    get.addEventListener("click",works);
 	</script>
 </body>
 </html>
