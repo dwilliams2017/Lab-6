@@ -38,16 +38,16 @@
 	<script type="text/javascript">
 		var get = document.getElementById('entrybutton');
     		function works(){
-      			var msg = "Dwight Williams: " + get.value;
+			var input = document.getElementById('entryinput');
+      			var msg = "Dwight Williams: " + input.value;
       			if (get.value.length <= 0){
         			alert("Enter message in input field.");
       			}
       			else{
         			alert(msg);
       			}
-   		}
-		
-    get.addEventListener("click",works());
+		}
+    		get.addEventListener("click",works());
 	</script>
 </body>
 </html>
